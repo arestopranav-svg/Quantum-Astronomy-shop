@@ -1,0 +1,1149 @@
+<!DOCTYPE html>
+<html lang="en" class="quantum-html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#0a0a12">
+    <title>arestopranav_.0p SHOP | Quantum Astronomy E-Commerce</title>
+    
+    <!-- Quantum Meta Tags -->
+    <meta name="description" content="NASA-inspired quantum astronomy shop with holographic products, AI telescopes, and quantum-order system. Explore the cosmos in style.">
+    <meta property="og:title" content="arestopranav_.0p SHOP | Quantum Astronomy">
+    <meta property="og:description" content="Premium NASA-style astronomy gear with quantum technology">
+    <meta property="og:image" content="https://arestopranavshop.com/quantum-preview.jpg">
+    
+    <!-- Quantum Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Exo+2:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Quantum Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Quantum Preload -->
+    <link rel="preload" href="style.css" as="style">
+    <link rel="preload" href="script.js" as="script">
+    
+    <!-- Quantum Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
+    
+    <!-- Quantum CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Quantum Manifest -->
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
+    
+    <style>
+        /* Critical Quantum CSS */
+        .quantum-loading {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #0a0a12;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            transition: opacity 0.5s ease;
+        }
+        
+        .quantum-loader {
+            width: 80px;
+            height: 80px;
+            border: 3px solid rgba(0, 217, 255, 0.3);
+            border-top-color: #00d9ff;
+            border-radius: 50%;
+            animation: quantumSpin 1.5s linear infinite;
+            margin-bottom: 20px;
+            box-shadow: 0 0 30px rgba(0, 217, 255, 0.5);
+        }
+        
+        @keyframes quantumSpin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .loading-text {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.2rem;
+            color: #00d9ff;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            animation: loadingPulse 2s ease-in-out infinite;
+        }
+        
+        @keyframes loadingPulse {
+            0%, 100% { opacity: 0.5; }
+            50% { opacity: 1; }
+        }
+    </style>
+</head>
+<body class="quantum-body">
+    <!-- Quantum Loading Screen -->
+    <div id="quantumLoading" class="quantum-loading">
+        <div class="quantum-loader"></div>
+        <div class="loading-text">INITIALIZING QUANTUM SYSTEMS</div>
+    </div>
+
+    <!-- Quantum Starfield Canvas -->
+    <canvas id="quantumCanvas"></canvas>
+    
+    <!-- Quantum Nebula Overlay -->
+    <div class="quantum-nebula">
+        <div class="nebula-layer" data-depth="0.3"></div>
+        <div class="nebula-layer" data-depth="0.5"></div>
+        <div class="nebula-layer" data-depth="0.7"></div>
+    </div>
+
+    <!-- Quantum Particles Container -->
+    <div id="quantumParticles" class="quantum-particles-container"></div>
+
+    <!-- Quantum Navigation -->
+    <nav class="quantum-nav glass-nav" role="navigation" aria-label="Main Navigation">
+        <div class="nav-container">
+            <!-- Quantum Brand Logo -->
+            <div class="quantum-brand">
+                <div class="logo-hologram">
+                    <div class="hologram-ring ring-1"></div>
+                    <div class="hologram-ring ring-2"></div>
+                    <div class="hologram-ring ring-3"></div>
+                    <div class="logo-core">
+                        <i class="fas fa-satellite"></i>
+                    </div>
+                </div>
+                <div class="brand-text">
+                    <h1 class="brand-title">
+                        <span class="brand-part-1">arestopranav_</span>
+                        <span class="brand-part-2">.0p</span>
+                        <span class="brand-part-3">SHOP</span>
+                    </h1>
+                    <div class="brand-tagline">QUANTUM ASTRONOMY</div>
+                </div>
+            </div>
+
+            <!-- Quantum Navigation Links -->
+            <div class="quantum-nav-links">
+                <a href="#hero" class="nav-link quantum-link active" data-quantum="home">
+                    <span class="link-icon"><i class="fas fa-home"></i></span>
+                    <span class="link-text">HOME</span>
+                    <span class="link-glow"></span>
+                </a>
+                <a href="#products" class="nav-link quantum-link" data-quantum="products">
+                    <span class="link-icon"><i class="fas fa-rocket"></i></span>
+                    <span class="link-text">PRODUCTS</span>
+                    <span class="link-glow"></span>
+                </a>
+                <a href="#categories" class="nav-link quantum-link" data-quantum="categories">
+                    <span class="link-icon"><i class="fas fa-layer-group"></i></span>
+                    <span class="link-text">CATEGORIES</span>
+                    <span class="link-glow"></span>
+                </a>
+                <a href="#about" class="nav-link quantum-link" data-quantum="about">
+                    <span class="link-icon"><i class="fas fa-user-astronaut"></i></span>
+                    <span class="link-text">MISSION</span>
+                    <span class="link-glow"></span>
+                </a>
+                <a href="#contact" class="nav-link quantum-link" data-quantum="contact">
+                    <span class="link-icon"><i class="fas fa-satellite-dish"></i></span>
+                    <span class="link-text">CONTACT</span>
+                    <span class="link-glow"></span>
+                </a>
+            </div>
+
+            <!-- Quantum Cart Indicator -->
+            <div class="quantum-cart" role="button" aria-label="Order Cart" tabindex="0">
+                <div class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </div>
+                <div class="cart-pulse"></div>
+            </div>
+
+            <!-- Quantum Mobile Menu -->
+            <button class="quantum-menu-btn" aria-label="Menu" aria-expanded="false">
+                <span class="menu-line line-1"></span>
+                <span class="menu-line line-2"></span>
+                <span class="menu-line line-3"></span>
+                <div class="menu-glow"></div>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Quantum Hero Section -->
+    <section id="hero" class="quantum-hero" aria-label="Hero Section">
+        <div class="hero-quantum-field">
+            <div class="quantum-wave wave-1"></div>
+            <div class="quantum-wave wave-2"></div>
+            <div class="quantum-wave wave-3"></div>
+        </div>
+        
+        <div class="hero-container">
+            <!-- Hero Content Left -->
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-text">QUANTUM EDITION</span>
+                    <div class="badge-glow"></div>
+                </div>
+                
+                <h2 class="hero-title">
+                    <span class="title-line line-1">EXPLORE THE</span>
+                    <span class="title-line line-2">
+                        <span class="text-glow" data-text="COSMOS">COSMOS</span>
+                    </span>
+                    <span class="title-line line-3">WITH QUANTUM GEAR</span>
+                </h2>
+                
+                <p class="hero-subtitle">
+                    NASA-inspired astronomy products enhanced with quantum technology. 
+                    Holographic designs, AI-powered telescopes, and quantum-order systems.
+                </p>
+                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-value" data-count="1500">0</div>
+                        <div class="stat-label">QUANTUM ORDERS</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value" data-count="4.9">0</div>
+                        <div class="stat-label">STAR RATING</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value" data-count="99">0</div>
+                        <div class="stat-label">% SATISFACTION</div>
+                    </div>
+                </div>
+                
+                <div class="hero-actions">
+                    <a href="#products" class="quantum-cta cta-primary" role="button">
+                        <span class="cta-text">SHOP QUANTUM</span>
+                        <span class="cta-icon"><i class="fas fa-arrow-right"></i></span>
+                        <span class="cta-glow"></span>
+                        <span class="cta-particles"></span>
+                    </a>
+                    <button class="quantum-cta cta-secondary" id="exploreDemo">
+                        <span class="cta-text">VIEW DEMO</span>
+                        <span class="cta-icon"><i class="fas fa-play"></i></span>
+                        <span class="cta-holo"></span>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Hero Visual Right -->
+            <div class="hero-visual">
+                <div class="quantum-orrery">
+                    <div class="orrery-core">
+                        <div class="core-pulse"></div>
+                    </div>
+                    <div class="orrery-orbit orbit-1">
+                        <div class="orbit-planet planet-1"></div>
+                    </div>
+                    <div class="orrery-orbit orbit-2">
+                        <div class="orbit-planet planet-2"></div>
+                    </div>
+                    <div class="orrery-orbit orbit-3">
+                        <div class="orbit-planet planet-3"></div>
+                    </div>
+                    <div class="quantum-telescope">
+                        <i class="fas fa-satellite"></i>
+                        <div class="telescope-laser"></div>
+                    </div>
+                </div>
+                
+                <div class="hero-floaters">
+                    <div class="floater floater-1" data-depth="0.2">
+                        <i class="fas fa-meteor"></i>
+                    </div>
+                    <div class="floater floater-2" data-depth="0.3">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="floater floater-3" data-depth="0.4">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Quantum Scroll Indicator -->
+        <div class="quantum-scroll" aria-label="Scroll Indicator">
+            <div class="scroll-line">
+                <div class="scroll-dot"></div>
+            </div>
+            <div class="scroll-text">QUANTUM SCROLL</div>
+        </div>
+    </section>
+
+    <!-- Quantum Products Section -->
+    <section id="products" class="quantum-products" aria-label="Products Section">
+        <div class="section-quantum-bg"></div>
+        
+        <div class="section-container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <i class="fas fa-atom"></i>
+                    <span>QUANTUM COLLECTION</span>
+                </div>
+                <h2 class="section-title">
+                    <span>HOLOGRAPHIC</span>
+                    <span class="text-glow" data-text="PRODUCTS">PRODUCTS</span>
+                </h2>
+                <p class="section-subtitle">
+                    Experience our quantum-enhanced product line with holographic displays, 
+                    AI integration, and quantum material technology.
+                </p>
+            </div>
+            
+            <!-- Quantum Products Filter -->
+            <div class="quantum-filter">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">ALL SYSTEMS</button>
+                    <button class="filter-btn" data-filter="t-shirts">QUANTUM WEAR</button>
+                    <button class="filter-btn" data-filter="telescopes">AI TELESCOPES</button>
+                    <button class="filter-btn" data-filter="accessories">QUANTUM GEAR</button>
+                </div>
+                <div class="filter-search">
+                    <input type="text" class="search-input" placeholder="QUANTUM SEARCH..." aria-label="Search Products">
+                    <button class="search-btn" aria-label="Search">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <div class="search-glow"></div>
+                </div>
+            </div>
+            
+            <!-- Quantum Products Grid -->
+            <div class="quantum-grid" id="productsGrid">
+                <!-- Products will be injected by quantum script -->
+            </div>
+            
+            <!-- Quantum Load More -->
+            <div class="quantum-load-more">
+                <button class="load-more-btn" id="loadMore">
+                    <span class="btn-text">LOAD QUANTUM PRODUCTS</span>
+                    <span class="btn-loader"></span>
+                    <span class="btn-glow"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quantum Categories Section -->
+    <section id="categories" class="quantum-categories" aria-label="Categories Section">
+        <div class="section-quantum-grid"></div>
+        
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span>QUANTUM</span>
+                    <span class="text-glow" data-text="CATEGORIES">CATEGORIES</span>
+                </h2>
+                <p class="section-subtitle">
+                    Explore our specialized quantum categories designed for different 
+                    levels of cosmic exploration.
+                </p>
+            </div>
+            
+            <div class="categories-grid">
+                <!-- Category 1: Quantum Wear -->
+                <div class="category-card quantum-card" data-category="t-shirts">
+                    <div class="category-hologram"></div>
+                    <div class="category-icon">
+                        <i class="fas fa-tshirt"></i>
+                        <div class="icon-orbits">
+                            <div class="orbit"></div>
+                            <div class="orbit"></div>
+                        </div>
+                    </div>
+                    <div class="category-content">
+                        <h3 class="category-title">QUANTUM WEAR</h3>
+                        <p class="category-desc">
+                            Holographic apparel with quantum-reactive materials. 
+                            Changes patterns based on temperature and light.
+                        </p>
+                        <div class="category-features">
+                            <span class="feature">Thermochromic</span>
+                            <span class="feature">Holographic</span>
+                            <span class="feature">Quantum Threads</span>
+                        </div>
+                        <div class="category-stats">
+                            <div class="stat">
+                                <span class="stat-value">15+</span>
+                                <span class="stat-label">DESIGNS</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">₹499+</span>
+                                <span class="stat-label">STARTING</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-glow"></div>
+                </div>
+                
+                <!-- Category 2: AI Telescopes -->
+                <div class="category-card quantum-card" data-category="telescopes">
+                    <div class="category-hologram"></div>
+                    <div class="category-icon">
+                        <i class="fas fa-satellite"></i>
+                        <div class="icon-orbits">
+                            <div class="orbit"></div>
+                            <div class="orbit"></div>
+                            <div class="orbit"></div>
+                        </div>
+                    </div>
+                    <div class="category-content">
+                        <h3 class="category-title">AI TELESCOPES</h3>
+                        <p class="category-desc">
+                            Neural network enhanced telescopes with quantum light capture 
+                            and automatic celestial tracking.
+                        </p>
+                        <div class="category-features">
+                            <span class="feature">AI Tracking</span>
+                            <span class="feature">Quantum Sensors</span>
+                            <span class="feature">Auto-Focus</span>
+                        </div>
+                        <div class="category-stats">
+                            <div class="stat">
+                                <span class="stat-value">8+</span>
+                                <span class="stat-label">MODELS</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">₹8,999+</span>
+                                <span class="stat-label">STARTING</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-glow"></div>
+                </div>
+                
+                <!-- Category 3: Quantum Gear -->
+                <div class="category-card quantum-card" data-category="accessories">
+                    <div class="category-hologram"></div>
+                    <div class="category-icon">
+                        <i class="fas fa-meteor"></i>
+                        <div class="icon-orbits">
+                            <div class="orbit"></div>
+                            <div class="orbit"></div>
+                            <div class="orbit"></div>
+                            <div class="orbit"></div>
+                        </div>
+                    </div>
+                    <div class="category-content">
+                        <h3 class="category-title">QUANTUM GEAR</h3>
+                        <p class="category-desc">
+                            Advanced astronomy accessories with quantum computing 
+                            integration and augmented reality features.
+                        </p>
+                        <div class="category-features">
+                            <span class="feature">AR Integration</span>
+                            <span class="feature">Quantum Chips</span>
+                            <span class="feature">Smart Connectivity</span>
+                        </div>
+                        <div class="category-stats">
+                            <div class="stat">
+                                <span class="stat-value">25+</span>
+                                <span class="stat-label">ITEMS</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">₹299+</span>
+                                <span class="stat-label">STARTING</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-glow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quantum About Section -->
+    <section id="about" class="quantum-about" aria-label="About Section">
+        <div class="section-quantum-sphere">
+            <div class="quantum-sphere"></div>
+        </div>
+        
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span>QUANTUM</span>
+                    <span class="text-glow" data-text="MISSION">MISSION</span>
+                </h2>
+                <p class="section-subtitle">
+                    Pushing the boundaries of astronomy with quantum technology and 
+                    NASA-inspired innovation.
+                </p>
+            </div>
+            
+            <div class="about-grid">
+                <!-- About Content -->
+                <div class="about-content quantum-card">
+                    <div class="about-badge">
+                        <i class="fas fa-rocket"></i>
+                        SINCE 2024
+                    </div>
+                    
+                    <h3 class="about-title">Quantum Astronomy Revolution</h3>
+                    
+                    <div class="about-text">
+                        <p>
+                            arestopranav_.0p SHOP represents the convergence of quantum physics 
+                            and astronomy. We're not just selling products; we're creating 
+                            tools for the next generation of cosmic explorers.
+                        </p>
+                        <p>
+                            Each product undergoes quantum optimization, ensuring maximum 
+                            performance and cutting-edge technology integration.
+                        </p>
+                    </div>
+                    
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-atom"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Quantum Processing</h4>
+                                <p>All products feature quantum computing integration</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>AI Integration</h4>
+                                <p>Neural networks enhance every product's capabilities</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-globe-americas"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Global Community</h4>
+                                <p>Join 50,000+ quantum astronomy enthusiasts</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-achievements">
+                        <div class="achievement">
+                            <div class="achievement-value" data-count="50000">0</div>
+                            <div class="achievement-label">QUANTUM USERS</div>
+                        </div>
+                        <div class="achievement">
+                            <div class="achievement-value" data-count="1500">0</div>
+                            <div class="achievement-label">STAR SYSTEMS</div>
+                        </div>
+                        <div class="achievement">
+                            <div class="achievement-value" data-count="99">0</div>
+                            <div class="achievement-label">% SATISFACTION</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- About Visual -->
+                <div class="about-visual">
+                    <div class="quantum-dna">
+                        <div class="dna-strand">
+                            <div class="dna-node"></div>
+                            <div class="dna-node"></div>
+                            <div class="dna-node"></div>
+                            <div class="dna-node"></div>
+                            <div class="dna-node"></div>
+                        </div>
+                        <div class="dna-strand">
+                            <div class="dna-node"></div>
+                            <div class="dna-node"></div>
+                            <div class="dna-node"></div>
+                            <div class="dna-node"></div>
+                            <div class="dna-node"></div>
+                        </div>
+                        <div class="dna-helix"></div>
+                    </div>
+                    
+                    <div class="quantum-globe">
+                        <div class="globe-core">
+                            <i class="fas fa-globe-americas"></i>
+                        </div>
+                        <div class="globe-orbit">
+                            <div class="orbit-satellite">
+                                <i class="fas fa-satellite"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quantum Contact Section -->
+    <section id="contact" class="quantum-contact" aria-label="Contact Section">
+        <div class="section-quantum-waves">
+            <div class="quantum-wave"></div>
+            <div class="quantum-wave"></div>
+        </div>
+        
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span>QUANTUM</span>
+                    <span class="text-glow" data-text="CONTACT">CONTACT</span>
+                </h2>
+                <p class="section-subtitle">
+                    Connect with our quantum support team for orders, inquiries, 
+                    and cosmic guidance.
+                </p>
+            </div>
+            
+            <div class="contact-grid">
+                <!-- Contact Info -->
+                <div class="contact-info quantum-card">
+                    <div class="contact-badge">
+                        <i class="fas fa-headset"></i>
+                        QUANTUM SUPPORT
+                    </div>
+                    
+                    <h3 class="contact-title">Transmission Hub</h3>
+                    
+                    <div class="contact-methods">
+                        <div class="method-item">
+                            <div class="method-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="method-content">
+                                <h4>Quantum Orders</h4>
+                                <p class="method-detail">+91 99578 11508</p>
+                                <p class="method-desc">24/7 WhatsApp order processing</p>
+                            </div>
+                            <div class="method-glow"></div>
+                        </div>
+                        
+                        <div class="method-item">
+                            <div class="method-icon">
+                                <i class="fas fa-satellite-dish"></i>
+                            </div>
+                            <div class="method-content">
+                                <h4>Cosmic Support</h4>
+                                <p class="method-detail">support@arestopranav.shop</p>
+                                <p class="method-desc">Technical and product guidance</p>
+                            </div>
+                            <div class="method-glow"></div>
+                        </div>
+                        
+                        <div class="method-item">
+                            <div class="method-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <div class="method-content">
+                                <h4>Quantum Shipping</h4>
+                                <p class="method-detail">2-4 Days India</p>
+                                <p class="method-desc">Hyper-speed delivery network</p>
+                            </div>
+                            <div class="method-glow"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-note">
+                        <div class="note-icon">
+                            <i class="fas fa-info-circle"></i>
+                        </div>
+                        <p class="note-text">
+                            All orders are processed via quantum transmission (WhatsApp) 
+                            for instant processing and confirmation.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Order Instructions -->
+                <div class="order-instructions quantum-card">
+                    <div class="instructions-badge">
+                        <i class="fas fa-bolt"></i>
+                        QUANTUM ORDER FLOW
+                    </div>
+                    
+                    <h3 class="instructions-title">4-Step Quantum Process</h3>
+                    
+                    <div class="instructions-steps">
+                        <div class="step-item">
+                            <div class="step-number">01</div>
+                            <div class="step-content">
+                                <h4>Select Product</h4>
+                                <p>Choose from our quantum collection</p>
+                            </div>
+                            <div class="step-glow"></div>
+                        </div>
+                        
+                        <div class="step-item">
+                            <div class="step-number">02</div>
+                            <div class="step-content">
+                                <h4>Click Order</h4>
+                                <p>Initiate quantum order sequence</p>
+                            </div>
+                            <div class="step-glow"></div>
+                        </div>
+                        
+                        <div class="step-item">
+                            <div class="step-number">03</div>
+                            <div class="step-content">
+                                <h4>Fill Details</h4>
+                                <p>Provide quantum transmission data</p>
+                            </div>
+                            <div class="step-glow"></div>
+                        </div>
+                        
+                        <div class="step-item">
+                            <div class="step-number">04</div>
+                            <div class="step-content">
+                                <h4>Auto WhatsApp</h4>
+                                <p>Automatic quantum transmission</p>
+                            </div>
+                            <div class="step-glow"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="instructions-note">
+                        <div class="quantum-alert">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <p>
+                                <strong>Quantum Security:</strong> No login required. 
+                                Your data is quantum-encrypted during transmission.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quantum Footer -->
+    <footer class="quantum-footer" role="contentinfo">
+        <div class="footer-quantum-field">
+            <div class="quantum-particle"></div>
+            <div class="quantum-particle"></div>
+            <div class="quantum-particle"></div>
+        </div>
+        
+        <div class="footer-container">
+            <!-- Footer Main -->
+            <div class="footer-main">
+                <!-- Brand Column -->
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <i class="fas fa-satellite"></i>
+                        <div class="logo-rings">
+                            <div class="ring"></div>
+                            <div class="ring"></div>
+                        </div>
+                    </div>
+                    <h3 class="brand-name">
+                        arestopranav_.0p <span class="brand-highlight">SHOP</span>
+                    </h3>
+                    <p class="brand-tagline">
+                        Quantum Astronomy E-Commerce
+                    </p>
+                    <p class="brand-desc">
+                        Pushing the boundaries of cosmic exploration with 
+                        quantum-enhanced astronomy products.
+                    </p>
+                    
+                    <div class="footer-social">
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                            <span class="social-glow"></span>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                            <span class="social-glow"></span>
+                        </a>
+                        <a href="#" class="social-link" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                            <span class="social-glow"></span>
+                        </a>
+                        <a href="#" class="social-link" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                            <span class="social-glow"></span>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Links Column -->
+                <div class="footer-links">
+                    <h4 class="links-title">QUANTUM NAVIGATION</h4>
+                    <ul class="links-list">
+                        <li><a href="#products" class="footer-link">Quantum Products</a></li>
+                        <li><a href="#categories" class="footer-link">AI Categories</a></li>
+                        <li><a href="#about" class="footer-link">Our Mission</a></li>
+                        <li><a href="#contact" class="footer-link">Contact Hub</a></li>
+                        <li><a href="#" class="footer-link">Quantum Blog</a></li>
+                        <li><a href="#" class="footer-link">Research Papers</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Support Column -->
+                <div class="footer-support">
+                    <h4 class="support-title">QUANTUM SUPPORT</h4>
+                    <ul class="support-list">
+                        <li><a href="#" class="support-link">Order Tracking</a></li>
+                        <li><a href="#" class="support-link">Quantum FAQ</a></li>
+                        <li><a href="#" class="support-link">Returns Policy</a></li>
+                        <li><a href="#" class="support-link">Shipping Info</a></li>
+                        <li><a href="#" class="support-link">Warranty</a></li>
+                        <li><a href="#" class="support-link">Technical Support</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Newsletter Column -->
+                <div class="footer-newsletter">
+                    <h4 class="newsletter-title">QUANTUM UPDATES</h4>
+                    <p class="newsletter-desc">
+                        Subscribe for quantum product launches, cosmic discoveries, 
+                        and exclusive offers.
+                    </p>
+                    
+                    <form class="newsletter-form" id="quantumNewsletter">
+                        <div class="form-group">
+                            <input type="email" 
+                                   class="newsletter-input" 
+                                   placeholder="ENTER QUANTUM EMAIL" 
+                                   aria-label="Email for newsletter"
+                                   required>
+                            <button type="submit" class="newsletter-btn" aria-label="Subscribe">
+                                <i class="fas fa-paper-plane"></i>
+                                <span class="btn-glow"></span>
+                            </button>
+                        </div>
+                        <div class="form-message" id="newsletterMessage"></div>
+                    </form>
+                    
+                    <div class="payment-methods">
+                        <div class="payment-title">QUANTUM PAYMENTS</div>
+                        <div class="payment-icons">
+                            <i class="fab fa-cc-visa"></i>
+                            <i class="fab fa-cc-mastercard"></i>
+                            <i class="fab fa-cc-amex"></i>
+                            <i class="fab fa-cc-paypal"></i>
+                            <i class="fab fa-google-pay"></i>
+                            <i class="fab fa-apple-pay"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    &copy; 2024 arestopranav_.0p SHOP. All quantum rights reserved.
+                </div>
+                <div class="footer-legal">
+                    <a href="#" class="legal-link">Quantum Terms</a>
+                    <a href="#" class="legal-link">Privacy Singularity</a>
+                    <a href="#" class="legal-link">Cookie Policy</a>
+                </div>
+                <div class="footer-status">
+                    <div class="status-indicator"></div>
+                    <span class="status-text">ALL SYSTEMS QUANTUM</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Quantum Modal - Order Form -->
+    <div id="quantumModal" class="quantum-modal" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
+        <div class="modal-overlay"></div>
+        
+        <div class="modal-container">
+            <!-- Modal Background Effects -->
+            <div class="modal-quantum-bg">
+                <div class="quantum-ring ring-1"></div>
+                <div class="quantum-ring ring-2"></div>
+                <div class="quantum-ring ring-3"></div>
+            </div>
+            
+            <!-- Modal Content -->
+            <div class="modal-content quantum-card">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <div class="modal-badge">
+                        <i class="fas fa-bolt"></i>
+                        QUANTUM ORDER
+                    </div>
+                    <h2 id="modalTitle" class="modal-title">Transmission Initiated</h2>
+                    <button class="modal-close" aria-label="Close modal">
+                        <i class="fas fa-times"></i>
+                        <div class="close-glow"></div>
+                    </button>
+                </div>
+                
+                <!-- Modal Body -->
+                <div class="modal-body">
+                    <form id="quantumOrderForm" class="quantum-form">
+                        <!-- Form Step Indicator -->
+                        <div class="form-steps">
+                            <div class="step active" data-step="1">
+                                <div class="step-number">1</div>
+                                <div class="step-label">IDENTITY</div>
+                            </div>
+                            <div class="step" data-step="2">
+                                <div class="step-number">2</div>
+                                <div class="step-label">DETAILS</div>
+                            </div>
+                            <div class="step" data-step="3">
+                                <div class="step-number">3</div>
+                                <div class="step-label">CONFIRM</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 1: Personal Info -->
+                        <div class="form-step step-1 active">
+                            <div class="form-group">
+                                <label for="quantumName" class="form-label">
+                                    <i class="fas fa-user-astronaut"></i>
+                                    QUANTUM NAME *
+                                </label>
+                                <input type="text" 
+                                       id="quantumName" 
+                                       class="form-input"
+                                       placeholder="Enter your cosmic identity"
+                                       required
+                                       autocomplete="name">
+                                <div class="form-feedback"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="quantumMobile" class="form-label">
+                                    <i class="fas fa-satellite-dish"></i>
+                                    QUANTUM LINK *
+                                </label>
+                                <input type="tel" 
+                                       id="quantumMobile" 
+                                       class="form-input"
+                                       placeholder="+91 00000 00000"
+                                       pattern="[0-9]{10}"
+                                       required
+                                       autocomplete="tel">
+                                <div class="form-feedback"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="quantumEmail" class="form-label">
+                                    <i class="fas fa-envelope"></i>
+                                    QUANTUM EMAIL
+                                </label>
+                                <input type="email" 
+                                       id="quantumEmail" 
+                                       class="form-input"
+                                       placeholder="cosmic@email.com"
+                                       autocomplete="email">
+                                <div class="form-feedback"></div>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 2: Address & Product -->
+                        <div class="form-step step-2">
+                            <div class="form-group">
+                                <label for="quantumAddress" class="form-label">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    LANDING COORDINATES *
+                                </label>
+                                <textarea id="quantumAddress" 
+                                          class="form-textarea"
+                                          rows="3"
+                                          placeholder="Full address with PIN code and quantum markers"
+                                          required></textarea>
+                                <div class="form-feedback"></div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="quantumProduct" class="form-label">
+                                        <i class="fas fa-rocket"></i>
+                                        QUANTUM PRODUCT
+                                    </label>
+                                    <input type="text" 
+                                           id="quantumProduct" 
+                                           class="form-input"
+                                           readonly>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="quantumQuantity" class="form-label">
+                                        <i class="fas fa-layer-group"></i>
+                                        FLEET SIZE *
+                                    </label>
+                                    <select id="quantumQuantity" class="form-select" required>
+                                        <option value="">SELECT</option>
+                                        <option value="1">1 Unit</option>
+                                        <option value="2">2 Units</option>
+                                        <option value="3">3 Units</option>
+                                        <option value="4">4 Units</option>
+                                        <option value="5">5+ Units (Quantum Bulk)</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="quantumInstructions" class="form-label">
+                                    <i class="fas fa-comment-alt"></i>
+                                    QUANTUM INSTRUCTIONS
+                                </label>
+                                <textarea id="quantumInstructions" 
+                                          class="form-textarea"
+                                          rows="2"
+                                          placeholder="Special quantum delivery instructions"></textarea>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 3: Confirmation -->
+                        <div class="form-step step-3">
+                            <div class="confirmation-summary">
+                                <h3 class="summary-title">QUANTUM TRANSMISSION SUMMARY</h3>
+                                
+                                <div class="summary-grid">
+                                    <div class="summary-item">
+                                        <span class="summary-label">Product:</span>
+                                        <span id="summaryProduct" class="summary-value">-</span>
+                                    </div>
+                                    <div class="summary-item">
+                                        <span class="summary-label">Quantity:</span>
+                                        <span id="summaryQuantity" class="summary-value">-</span>
+                                    </div>
+                                    <div class="summary-item">
+                                        <span class="summary-label">Name:</span>
+                                        <span id="summaryName" class="summary-value">-</span>
+                                    </div>
+                                    <div class="summary-item">
+                                        <span class="summary-label">Mobile:</span>
+                                        <span id="summaryMobile" class="summary-value">-</span>
+                                    </div>
+                                    <div class="summary-item full-width">
+                                        <span class="summary-label">Address:</span>
+                                        <span id="summaryAddress" class="summary-value">-</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="summary-note">
+                                    <i class="fas fa-info-circle"></i>
+                                    <p>Your order will be transmitted via quantum WhatsApp to: <strong>+91 99578 11508</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Form Navigation -->
+                        <div class="form-navigation">
+                            <button type="button" class="form-btn btn-prev" id="prevStep">
+                                <i class="fas fa-arrow-left"></i>
+                                PREVIOUS
+                            </button>
+                            
+                            <button type="button" class="form-btn btn-next" id="nextStep">
+                                NEXT
+                                <i class="fas fa-arrow-right"></i>
+                                <span class="btn-quantum"></span>
+                            </button>
+                            
+                            <button type="submit" class="form-btn btn-submit" id="submitOrder">
+                                <i class="fab fa-whatsapp"></i>
+                                TRANSMIT VIA WHATSAPP
+                                <div class="submit-glow"></div>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                
+                <!-- Modal Footer -->
+                <div class="modal-footer">
+                    <div class="modal-security">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>QUANTUM ENCRYPTED TRANSMISSION</span>
+                    </div>
+                    <div class="modal-time">
+                        <i class="fas fa-clock"></i>
+                        <span>PROCESSING TIME: < 60 SECONDS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quantum Toast Notifications -->
+    <div id="quantumToast" class="quantum-toast" role="alert" aria-live="assertive">
+        <div class="toast-content">
+            <div class="toast-icon"></div>
+            <div class="toast-message"></div>
+        </div>
+        <div class="toast-progress"></div>
+    </div>
+
+    <!-- Quantum Demo Panel (Hidden) -->
+    <div id="quantumDemo" class="quantum-demo" aria-hidden="true">
+        <div class="demo-controls">
+            <button class="demo-btn" data-effect="particles">
+                <i class="fas fa-atom"></i>
+                PARTICLES
+            </button>
+            <button class="demo-btn" data-effect="parallax">
+                <i class="fas fa-layer-group"></i>
+                PARALLAX
+            </button>
+            <button class="demo-btn" data-effect="holograms">
+                <i class="fas fa-hologram"></i>
+                HOLOGRAMS
+            </button>
+            <button class="demo-btn" data-effect="quantum">
+                <i class="fas fa-bolt"></i>
+                QUANTUM
+            </button>
+        </div>
+    </div>
+
+    <!-- Quantum Audio Elements (Hidden) -->
+    <audio id="quantumClick" preload="auto">
+        <source src="data:audio/mpeg;base64,//" type="audio/mpeg">
+    </audio>
+    
+    <audio id="quantumHover" preload="auto">
+        <source src="data:audio/mpeg;base64,//" type="audio/mpeg">
+    </audio>
+    
+    <audio id="quantumSuccess" preload="auto">
+        <source src="data:audio/mpeg;base64,//" type="audio/mpeg">
+    </audio>
+
+    <!-- Quantum Script -->
+    <script src="script.js" defer></script>
+    
+    <!-- Quantum Service Worker Registration -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js').catch(console.log);
+            });
+        }
+    </script>
+    
+    <!-- Quantum Performance Monitoring -->
+    <script>
+        window.addEventListener('load', function() {
+            const loading = document.getElementById('quantumLoading');
+            if (loading) {
+                setTimeout(() => {
+                    loading.style.opacity = '0';
+                    setTimeout(() => {
+                        loading.style.display = 'none';
+                    }, 500);
+                }, 1000);
+            }
+            
+            // Log performance
+            const perf = performance.getEntriesByType('navigation')[0];
+            if (perf) {
+                console.log('🚀 Quantum Load Time:', perf.domContentLoadedEventEnd - perf.fetchStart, 'ms');
+            }
+        });
+    </script>
+</body>
+  </html>
